@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 	<title>Reddit Challenge #364: Easy Dice Roller</title>
-	<script type="text/javascript" src = "./script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+
 </head>
 <body>
-<h3>This is a dice thrower! Please input your desired roll(s).</h3>
-<p>Please enter in the form of how many rolls you want to make, followed by the type of dice</p>
-<p>For example, if you want to roll a six-sided die three times, enter <i>3d6</i></p>
+    
+    <header class="page-header header container-fluid">
+        <h3>This is a dice thrower! Please input your desired roll(s).</h3>
+    </header>
+    
+    <div class="container-fluid">
+        <p>Please enter in the form of how many rolls you want to make, followed by the type of dice</p>
+        <p>For example, if you want to roll a six-sided die three times, enter <i>3d6</i></p>
 
-<form id = "form1">
-	<input type = "text" name = "Dice Roll" id ="userInput">
-</form>
-<button onClick = "myFunction()">Roll</button>
+        <form id = "form1">
+	       <input type = "text" name = "Dice Roll" id ="userInput">
+        </form>
+        
+    </div>
+    <br >
+    
+     <div class="col text-center">
+        <button onClick = "myFunction()" type="button" class="btn btn-success btn-lg" >Roll</button>
+    </div>
+    <br >
+    <div class="card border-dark mb-3">
+    <div class="card-header">Results</div>
+    <div class="card-body text-dark">
+        <p class="card-text" id="display"></p>
+    </div>
+    </div>
 
-<p id = "display"></p>
+    
+<script type="text/javascript" src = "./script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
